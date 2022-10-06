@@ -88,7 +88,8 @@ class SampleBort(PlayerInterface):
                            suggestor_id: int,
                            suggestion: Suggestion,
                            blocker_id: Optional[int]) -> None:
-        pass
+        if blocker_id is None:
+            self.solution = suggestion
 
     def observe_accusation(self,
                            accusor_id: int,
