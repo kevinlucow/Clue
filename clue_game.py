@@ -428,6 +428,7 @@ class ClueGame():
             if active_player_exists:
                 return False
             print("All players were eliminated.")
+            exit()
 
     def __giveTurn(self,
                    player_id: int) -> bool:
